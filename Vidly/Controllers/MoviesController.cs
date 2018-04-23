@@ -37,9 +37,7 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            List<Movie> movies = new List<Movie>();
-            movies.Add(new Movie() { Name = "Sherk", Id = 1 });
-            movies.Add(new Movie() { Name = "Wall-e", Id = 2 });
+            var movies = GetMovies();
 
 
             return View(movies);
@@ -53,6 +51,23 @@ namespace Vidly.Controllers
             return Content(year+"/"+month);
         }
         
+
+        [Route("Movies/Details/{id:regex(\\d)}")]
+        public ActionResult Details(int id)
+        {
+            var movie = GetMovies().SingleOrDefault(m => m.Id == id);
+
+            if(movie == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                return View(movie);
+            }
+        }
+
+
         public ActionResult Edit(int id)
         {
             return Content("id=" + id);
@@ -73,5 +88,15 @@ namespace Vidly.Controllers
 
             return (Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy)));
         }*/
+
+
+        private IEnumerable<Movie> GetMovies()
+        {
+            return new List<Movie>
+            {
+                new Movie { Id = 1, Name = "Shrek" },
+                new Movie { Id = 2, Name = "Wall-e" }
+            };
+        }
     }
 }
