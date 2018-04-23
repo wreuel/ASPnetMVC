@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
+using System.Data.Entity;
 
 namespace Vidly.Controllers
 {
@@ -26,9 +27,9 @@ namespace Vidly.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            var customers = GetCustomers();
+
+            var customers = _context.Customers.Include(c => c.MembershipType ).ToList(); //GetCustomers();
             
-         
             return View(customers);
         }
 
@@ -36,8 +37,8 @@ namespace Vidly.Controllers
         [Route("Customers/Details/{id:regex(\\d)}")]
         public ActionResult Details(int id)
         {
-            
-            var customer = GetCustomers().SingleOrDefault(s => s.Id == id);
+
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id); //GetCustomers().SingleOrDefault(s => s.Id == id);
 
             if(customer == null)
             {
