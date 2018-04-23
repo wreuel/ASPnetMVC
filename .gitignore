@@ -1,4 +1,6 @@
 .suo
+obj
+bin
 db.lock
 storage.ide
 applicationhost.config
