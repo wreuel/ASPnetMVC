@@ -106,3 +106,5 @@ D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.CreatingNameCo
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembershiptype.resources
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembershiptypeagain.resources
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddBirthDateToCustomer.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMovieGenre.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre.resources
