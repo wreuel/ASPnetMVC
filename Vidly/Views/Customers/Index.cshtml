@@ -26,7 +26,7 @@ else
             <tr class="table-active">
                 @*<li>@Html.ActionLink("Customers", "Index", "Customers")</li>*@
                 <td >@Html.ActionLink(cust.Name, "Details", "Customers", new { id = cust.Id}, null)</td>
-                <td>@cust.MembershipType.DiscountRate%</td>
+                <td>@cust.MembershipType.Name</td>
             </tr>
             }
 

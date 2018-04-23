@@ -102,3 +102,7 @@ D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSubscribe
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationToCustomerName.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.CreatingNameColumnOnMembershiptype.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembershiptype.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembershiptypeagain.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddBirthDateToCustomer.resources
