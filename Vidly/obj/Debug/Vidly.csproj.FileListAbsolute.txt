@@ -108,3 +108,4 @@ D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembersh
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddBirthDateToCustomer.resources
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMovieGenre.resources
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.NovoErro.resources
