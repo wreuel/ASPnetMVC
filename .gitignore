@@ -4,3 +4,10 @@ bin
 db.lock
 storage.ide
 applicationhost.config
+Vidly/bin/Vidly.dll
+Vidly/bin/Vidly.pdb
+Vidly/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Vidly/obj/Debug/Vidly.csproj.CoreCompileInputs.cache
+Vidly/obj/Debug/Vidly.dll
+Vidly/obj/Debug/Vidly.pdb
+

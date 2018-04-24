@@ -24,7 +24,47 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
-        // GET: Customers
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+
+            CustomerFormViewModel viewModel = new CustomerFormViewModel
+            {
+                MembershipTypes = membershipTypes
+            };
+
+            return View("CustomerForm", viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Save(Customer customer)
+        {
+            if(customer.Id == 0)
+            {
+                _context.Customers.Add(customer);
+                
+
+            }
+            else
+            {
+                var customerIndB = _context.Customers.Single(c => c.Id == customer.Id);
+
+                customerIndB.Name = customer.Name;
+                customerIndB.Birthdate = customer.Birthdate;
+                customerIndB.MembershipTypeId = customer.MembershipTypeId;
+                customerIndB.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
+                
+                
+                //TryUpdateModel(customerIndB); //
+            }
+
+            _context.SaveChanges();
+
+
+            return RedirectToAction("Index", "Customers");
+        }
+
+        
         public ActionResult Index()
         {
 
@@ -50,14 +90,25 @@ namespace Vidly.Controllers
             }
         }
 
-
-        private IEnumerable<Customer> GetCustomers()
+        public ActionResult Edit(int id)
         {
-            return new List<Customer>
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if(customer == null)
             {
-                new Customer { Id = 1, Name = "John Smith" },
-                new Customer { Id = 2, Name = "Mary Williams" }
+                return HttpNotFound();
+            }
+
+            var viewModel = new CustomerFormViewModel
+            {
+                Customer = customer,
+                MembershipTypes = _context.MembershipTypes.ToList()
             };
+
+            return View("CustomerForm", viewModel);
         }
+
+
+        
     }
 }
