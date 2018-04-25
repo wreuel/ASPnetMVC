@@ -69,7 +69,7 @@ namespace Vidly.Controllers.Api
 
         //PUT /api/customers/1
         [HttpPut]
-        public void UdpateCustomer(int id, CustomerDto customerDto)
+        public void PutUdpateCustomer(int id, CustomerDto customerDto)
         {
             if (!ModelState.IsValid)
             {
