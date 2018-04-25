@@ -109,3 +109,10 @@ D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddBirthDateTo
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMovieGenre.resources
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre.resources
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.NovoErro.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.ObrigatoriedadeNomeGenre.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Web.Http.dll
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Web.Http.xml
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
