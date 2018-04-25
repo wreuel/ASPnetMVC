@@ -11,11 +11,12 @@
 }
 else
 {
-    <table class="table table-bordered table-hover">
+    <table id="customers" class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th >Customer</th>
+                <th>Customer</th>
                 <th>Discount Rate</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -23,16 +24,41 @@ else
 
             @foreach (var cust in Model)
             {
-            <tr class="table-active">
-                @*<li>@Html.ActionLink("Customers", "Index", "Customers")</li>*@
-                <td >@Html.ActionLink(cust.Name, "Edit", "Customers", new { id = cust.Id}, null)</td>
-                <td>@cust.MembershipType.Name</td>
-            </tr>
+                <tr class="table-active">
+                    @*<li>@Html.ActionLink("Customers", "Index", "Customers")</li>*@
+                    <td>@Html.ActionLink(cust.Name, "Edit", "Customers", new { id = cust.Id }, null)</td>
+                    <td>@cust.MembershipType.Name</td>
+                    <td>
+                        <button data-customer-id="@cust.Id" class="btn-link js-delete">Delete</button>
+                    </td>
+                </tr>
             }
 
 
         </tbody>
     </table>
-
+}
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $("#customers").on("click", ".js-delete", function () {
+                var button = $(this);
+                bootbox.confirm("Are you sure?", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/api/customers/" + button.attr("data-customer-id"),
+                            method: "DELETE",
+                            success: function () {
+                                button.parents("tr").remove();
+                                //console.log("Sucess");
+                            }
+                        });
+                    }
+                });
+            });
+            
+        });
+    </script>
 }
 
