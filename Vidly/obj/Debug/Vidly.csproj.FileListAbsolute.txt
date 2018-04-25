@@ -116,3 +116,5 @@ D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Web.Http.xml
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\AutoMapper.dll
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\AutoMapper.xml
