@@ -81,9 +81,11 @@ namespace Vidly.Controllers
         public ActionResult Index()
         {
 
-            var customers = _context.Customers.Include(c => c.MembershipType ).ToList(); //GetCustomers();
+            //var customers = _context.Customers.Include(c => c.MembershipType ).ToList(); //GetCustomers();
             
-            return View(customers);
+            //return View(customers);
+
+            return View();
         }
 
         //[Route("movies/released/{year:regex(\\d{2})}/{month:regex(\\d{2}):range(1, 12)}")]

@@ -6,3 +6,5 @@ storage.ide
 applicationhost.config
 Vidly.pdb
 Vidly.dll
+*.mp4
+*.pdf
