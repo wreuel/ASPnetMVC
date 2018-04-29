@@ -120,3 +120,4 @@ D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\AutoMapper.dll
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\bin\AutoMapper.xml
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
 D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicationUser.resources
+D:\Desenvolvimento\ESTUDOS\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddTelefoneToRegister.resources

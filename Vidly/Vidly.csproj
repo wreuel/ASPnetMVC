@@ -19,7 +19,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44381</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -277,16 +277,27 @@
     <Compile Include="Migrations\201804291741269_AddDrivingLicenseToApplicationUser.Designer.cs">
       <DependentUpon>201804291741269_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804292050388_AddTelefoneToRegister.cs" />
+    <Compile Include="Migrations\201804292050388_AddTelefoneToRegister.Designer.cs">
+      <DependentUpon>201804292050388_AddTelefoneToRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\ResetPasswordViewModel.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\ForgotPasswordViewModel.cs" />
+    <Compile Include="Models\ForgotViewModel.cs" />
     <Compile Include="Models\Genre.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\RoleName.cs" />
+    <Compile Include="Models\VerifyCodeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
@@ -598,6 +609,9 @@
     <EmbeddedResource Include="Migrations\201804291741269_AddDrivingLicenseToApplicationUser.resx">
       <DependentUpon>201804291741269_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804292050388_AddTelefoneToRegister.resx">
+      <DependentUpon>201804292050388_AddTelefoneToRegister.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -617,7 +631,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64562</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:64562/</IISUrl>
+          <IISUrl>https://localhost:44381/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
